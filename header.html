@@ -1,0 +1,112 @@
+<style>
+	.navbar {
+	width: 100%; 
+	height: 180px; 
+	background: #2E2E2E; 
+	display: flex;
+	border-radius: 0px;
+	}
+	.navLogo {
+	height: 180px;
+	margin-left: 25px;
+	}
+	.navItems {
+	text-decoration: none; 
+	display: inline; 
+	color: white;
+	}
+	.navItem {
+	display: inline;
+	font-size: 28px;
+	margin-left: 10px;
+	margin-right: 10px;
+	line-height: 180px;
+	}
+	.btnLink{
+	margin-top: 5%;
+	}
+	.btnFArea{
+	height: 45%;
+	background: gray;
+	border-width: 0px;
+	margin-left: 25px;
+	color: white;
+	border-radius: 3px;
+	}
+	.changeLanguage{
+	margin-top: 4.9%;
+	margin-left: 25px;
+	}
+	.globeHolder{
+	background: gray;
+	padding: 10px;
+	height: 55px;
+	border-radius: 3px;
+	}
+	.globeHolder:hover{
+	border-radius: 3px 3px 0px 0px;
+	}
+	.globeHolder:hover + .flagsHolder{
+	visibility: visible;
+	}
+	.globe{
+	width: 35px;
+	margin-right: 5px;
+	}
+	.arrow{
+	width: 10px;
+	}
+	.flagsHolder{
+	background: gray;
+	padding: 0; 
+	list-style-type: none;
+	border-radius: 0px 0px 3px 3px;
+	visibility: hidden;
+	}
+	.flagsHolder:hover + .globeHolder {
+	border-radius: 3px 3px 0px 0px;
+	background: white;
+	}
+	.flagsHolder:hover {
+	visibility: visible;
+	}
+	.flagImg{
+	height: 25px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+	.flag{
+	}
+</style>
+
+<div class="navbar">
+	<img src="img/logo.png" class="navLogo">
+	<nav style="width: parent;">
+		<ul class="navItems">
+			<li class="navItem">Home</li>
+			<li class="navItem">Serviços</li>
+			<li class="navItem">Quem Somos</li>
+			<li class="navItem">Contato</li>
+		</ul>
+	</nav>
+	
+	<a href="google.com" class="btnLink">
+		<button class="btnFArea">
+			Área do Funcionário
+		</button>
+	</a>
+	<div class="changeLanguage">
+		<div class="globeHolder">
+			<img src="img/globe.png" class="globe" align="center">
+			<img src="img/arrow.png" class="arrow">
+		</div>
+		<ul class="flagsHolder">
+			<center><a href="index.php?pt">
+				<li class="flag"><img class="flagImg" src="img/brazil.png"></li>
+			</a></center>
+			<center><a href="index.php?eng">
+				<li class="flag"><img class="flagImg" src="img/uk.png"></li>
+			</a></center>
+		</ul>
+	</div>
+</div>
