@@ -74,19 +74,27 @@
 				</div>
 			</div>
 			
-			<section id="Funcs" style="display:flex;align-items: center;flex-direction: column;">
-				<div class="row">
-				  <div class="col">col</div>
-				  <div class="col">col</div>
-				  <div class="col">col</div>
-				  <div class="col">col</div>
-				</div>
-				<div class="row">
-				  <div class="col">col</div>
-				  <div class="col">col</div>
-				  <div class="col">col</div>
-				  <div class="col">col</div>
-				</div>
+			<section id="Funcs">
+				<div style="display:flex;align-items: center;flex-direction: column;">
+					<div class="row">
+					  <div class="col"><img src="" height="250" width="250"></div>
+					  <div class="col"><img src="" height="250" width="250"></div>
+					  <div class="col"><img src="" height="250" width="250"></div>
+					  <div class="col">
+						<div style="width:250px;display:flex;flex-direction: column;align-items: flex-end;"><h1>Quem</h1><h1>Somos</h1></div>
+					  </div>
+					</div><br>
+					<div class="row">
+					  <div class="col"><img src="" height="250" width="250"></div>
+					  <div class="col"><img src="" height="250" width="250"></div>
+					  <div class="col"><img src="" height="250" width="250"></div>
+					  <div class="col"><img src="" height="250" width="250"></div>
+					</div>
+				</div><br>
+				<h4 align="center">
+				Clique em uma das fotos de perfil
+				para visualizar a descrição 
+				de cada membro</h4><br>
 			</section>
 		<?php include "footer.html" ?>
 	</body>
