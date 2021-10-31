@@ -85,18 +85,18 @@
 					<br>
 					<div style="display: flex; padding-right: 20px; padding-left: 20px;">
 						<div style="width:50%; margin-right: 30px;">
-							<form method="post">
+							<form name="frmFeedback" method="post" action="insertUserMsg.php">
 								<div class="form-group">
 									<label for="txtNome">Nome:</label>
-									<input type="text" class="form-control" id="txtNome" placeholder="Digite seu nome" style="background:gray;border-radius:3px;">
+									<input id="txtNome" type="text" class="form-control" name="txtNome" placeholder="Digite seu nome" style="background:gray;border-radius:3px;">
 								</div>
 								<div class="form-group">	
 									<label for="txtEmail">Email:</label>
-									<input type="email" class="form-control" id="txtEmail" placeholder="Digite seu email" style="background:gray;border-radius:3px;">
+									<input id="txtEmail" type="email" class="form-control" name="txtEmail" placeholder="Digite seu email" style="background:gray;border-radius:3px;">
 								</div>
 								<div class="form-group">
 									<label for="txtMsg">Mensagem:</label>
-									<textarea class="form-control" id="txtMsg" placeholder="Digite sua mensagem" rows="8" style="background:gray;border-radius:3px;resize:none;"></textarea>
+									<textarea id="txtMsg" class="form-control" name="txtMsg" placeholder="Digite sua mensagem" rows="8" style="background:gray;border-radius:3px;resize:none;"></textarea>
 								</div>
 								 <button type="submit" class="btn" style="background:gray;border-radius:3px;margin-top:5px;">Enviar</button>
 							</form>
