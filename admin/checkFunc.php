@@ -9,7 +9,11 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<?php include "funcMenu.php" ?>
+		<?php 
+			include "funcMenu.php"; 
+			include "../database/connector.php";
+			$find = $connect->query("select * from seeFuncs");
+		?>
 		<div style="padding:20px;">
 			<h2>Verificar os funcionários cadastrados</h2>
 			<div style="overflow: scroll;width:150%;height:780%;border-style:solid;border-width:1px 1px 1px 1px;max-width:115%;max-height:780%;">
@@ -20,24 +24,27 @@
 							<th scope="col">Nome</th>
 							<th scope="col">Cargo</th>
 							<th scope="col">Endereço</th>
-							<th scope="col">CEP</th>
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<td scope="col">132213412</td>
-							<td>Fulano de Silva</td>
-							<td>Designer</td>
-							<td>Casa da Mãe Juana, 212. São Paulo, SP</td>
-							<td>241234</td>
-						</tr>
-						<tr>
-							<td scope="col">132213412</td>
-							<td>Ciclano Júnior</td>
-							<td>Cassino</td>
-							<td>Viaduto do Chá de Amo, 53. São Paulo, SP</td>
-							<td>241234</td>
-						</tr>
+						<?php
+							while($show = $find->fetch(PDO::FETCH_ASSOC))
+							{ 
+								echo'<tr class="align-middle">';?>
+									<td scope="col" ><?php echo $show["CPF"]?></td>
+									<td><?php echo $show["Nome"]?></td>
+									<td><?php echo $show["Cargo"]?>
+									<td>
+										<a title="<?php echo $show["CEP"]?>">
+											<?php echo $show["Logradouro"].", ".$show["Número"]?><br>
+											<small>
+												<?php echo $show["Cidade"].", ".$show["Estado"]?>
+											</small>
+										</a>
+									</td>
+								</tr>
+						<?php }
+						?>
 					</tbody>
 				</table>
 			</div>

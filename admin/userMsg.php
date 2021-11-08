@@ -11,55 +11,32 @@
 	<body>
 		<?php 
 			include "funcMenu.php";
-			include "database/connector.php";
-			$find = $connect->query("select * from tbCliMsg");
+			include "../database/connector.php";
+			$find = $connect->query("select * from tbCliMsg order by msgID desc");
 		?>
 		<div style="padding:20px;">
 			<h2>Mensagens dos clientes</h2>
-			<div style="overflow: scroll;width:150%;height:90%;border-style:solid;border-width:1px 1px 1px 1px;max-width:100%;max-height:60%">
+			<div style="overflow: scroll;width:150%;height:90%;border-style:solid;border-width:1px 1px 1px 1px;max-width:100%;max-height:60%,min-height:60%">
 				<?php
 				while($show = $find->fetch(PDO::FETCH_ASSOC))
 				{ 
 					echo '<div style="padding:10px;display:flex;flex-direction:column;border-width:1px 1px 1px 1px;">';?>
-						<h4>Mensagem <?php $show["clidID"] ?></h4>
+						<h4>Mensagem <?php echo $show["msgID"] ?></h4>
 						<div style="display:flex;align-items: flex-start;">
-							<h5>De:&nbsp <?php $show["cliNome"] ?></h5><p> </p>
+							<h5>De:&nbsp<?php echo $show["cliNome"] ?></h5><p> </p>
 						</div>
 						<h5>Mensagem:&nbsp</h5>
 						<p>
-							<?php $show["cliMsg"]  ?>
+							<?php echo $show["cliMsg"]  ?>
 						</p>
 						<div style="display:flex;">
-							<a href="mailto:<?php $show["cliEmail"] ?> Golden Company"> 
+							<a href="mailto:<?php echo $show["cliEmail"] ?>"> 
 								<button style="30px">Responder</button>
 							</a>&nbsp
 							<a><button style="30px">Marcar como lida</button></a>
 						</div>
 					<?php echo '</div>';
 				}?>
-				<div style="padding:10px;display:flex;flex-direction:column;border-width:1px 1px 1px 1px;">
-					<h4>Mensagem 2</h4>
-					<div style="display:flex;align-items: flex-start;">
-						<h5>De:&nbsp</h5><p>Wellington Cidade</p>
-					</div>
-					<h5>Mensagem:&nbsp</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at felis at magna 
-						lobortis ultricies. In hac habitasse platea dictumst. Nulla feugiat non leo eget aliquet.
-						Maecenas dapibus hendrerit odio at maximus. Ut pellentesque, erat quis congue faucibus, 
-						lorem sem semper quam, in tincidunt risus libero non arcu. Aenean facilisis ullamcorper 
-						ipsum sed cursus. Sed nec tellus et neque porttitor luctus. Nam facilisis erat sit amet 
-						orci aliquam, ut faucibus augue pharetra. Orci varius natoque penatibus et magnis dis 
-						parturient montes, nascetur ridiculus mus. In at varius enim. Praesent pulvinar eros sit 
-						amet lorem hendrerit, nec porta dolor fermentum. Suspendisse quis scelerisque nisi. Nulla
-						quis nisi in ipsum fermentum efficitur. Integer ultrices elit est, eu faucibus augue 
-						iaculis sit amet.
-					</p>
-					<div style="display:flex;">
-						<a href="mailto:someone@yoursite.com?subject=Feedback Golden Company"> 
-							<button style="30px">Responder</button>
-						</a>&nbsp
-						<a><button style="30px">Marcar como lida</button></a>
-					</div>
 				</div>
 			</div>
 			

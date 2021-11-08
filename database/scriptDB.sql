@@ -1,3 +1,4 @@
+drop database if exists dbGoldenCompanySite;
 
 create database dbGoldenCompanySite;
 
@@ -6,7 +7,7 @@ use dbGoldenCompanySite;
 grant all privileges on dbGoldenCompanySite.* to "main"@"localhost" with grant option;
 
 create table tbCliMsg(
-clidID int primary key auto_increment,
+msgID int primary key auto_increment,
 cliNome varchar(50),
 cliEmail varchar(50),
 cliMsg varchar(250) not null
@@ -38,6 +39,35 @@ numEnd int not null,
 CEP char(9) not null,
 foreign key (CEP) references tbEndereco (CEP)
 );
+
+insert into tbestado values
+('RO'),
+('AC'),
+('AM'),
+('RR'),
+('PA'),
+('AP'),
+('TO'),
+('MA'),
+('PI'),
+('CE'),
+('RN'),
+('PB'),
+('PE'),
+('AL'),
+('SE'),
+('BA'),
+('MG'),
+('ES'),
+('RJ'),
+('SP'),
+('PR'),
+('SC'),
+('RS'),
+('MS'),
+('MT'),
+('GO'),
+('DF');
 
 delimiter $$
 create procedure insertFunc(
@@ -81,5 +111,3 @@ from (((tbfunc as f
     inner join tbestado as es on en.estUF = es.estUF);
     
 select * from seeFuncs;
-
-/*drop database dbGoldenCompanySite;*/
