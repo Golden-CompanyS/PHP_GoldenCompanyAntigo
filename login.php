@@ -7,6 +7,11 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		<link rel="sourtout icon" href="">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="jquery.mask.min.js"></script>
+		<script>
+			$(document).ready(function(){$("#txtCPF").mask("000.000.000-00")})
+		</script>
 	</head>
 	<body>
 		<div style="background-image: url(img/bg.jpg);background-size: cover;filter: blur(7px);width:100%;height:100%;z-index:-1;position:absolute;">
@@ -21,11 +26,11 @@
 				<form method="post" name="frmLogin" style="margin-left:100px;margin-right:100px;display:flex;flex-direction: column;font-size:24px;align-items: center;" action="admin/checkFunc.php">
 					<div class="form-group">
 						<label for="txtCPF">CPF:</label>
-						<input name="txtCPF" type="text" class="form-control" placeholder="Digite seu CPF" style="font-size:24px;">
+						<input name="txtCPF" id="txtCPF" type="text" class="form-control" placeholder="Digite seu CPF" style="font-size:24px;">
 					</div>
 					<div class="form-group">
 						<label for="txtSenha">Senha:</label>
-						<input name="txtSenha" type="text" class="form-control" placeholder="Digite sua senha" style="font-size:24px;">
+						<input name="txtSenha" id="txtSenha" type="text" class="form-control" placeholder="Digite sua senha" style="font-size:24px;">
 					</div><br>
 					<button class="btn" type="submit" style="background:black; color: white;font-size:28px;width:300px;">
 						Entrar
