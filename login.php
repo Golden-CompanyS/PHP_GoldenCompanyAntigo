@@ -21,9 +21,9 @@
 				<span class="glyphicon glyphicon-menu-left"></span> Voltar ao site
 			</button>
 		</a>
-			<div style="margin: 200px;margin-top: 10%;margin-bottom:0px;">
+			<div style="margin: 200px;margin-top: 10%;margin-bottom:0px;color:white;">
 				<h2 align="center">Acesso à Área do Funcionário</h2>
-				<form method="post" name="frmLogin" style="margin-left:100px;margin-right:100px;display:flex;flex-direction: column;font-size:24px;align-items: center;" action="admin/checkFunc.php">
+				<form method="post" name="frmLogin" style="margin-left:100px;margin-right:100px;display:flex;flex-direction: column;font-size:24px;align-items: center;" action="admin/checkLogin.php">
 					<div class="form-group">
 						<label for="txtCPF">CPF:</label>
 						<input name="txtCPF" id="txtCPF" type="text" class="form-control" placeholder="Digite seu CPF" style="font-size:24px;">
@@ -36,6 +36,23 @@
 						Entrar
 					</button>
 				</form>
+				<script>
+					cpf = document.getElementById("txtCPF");
+					pass = document.getElementById("txtSenha");
+					
+					var error = window.location.search;
+					
+					if(error == "?cpf"){
+					cpf.placeholder = "CPF não cadastrado";
+					cpf.style.borderColor = "red";
+					cpf.style.borderWidth = "2px";
+					}
+					if(error == "?pass"){
+					pass.placeholder = "Senha incorreta";
+					pass.style.borderColor = "red";
+					pass.style.borderWidth = "2px";
+					}
+				</script>
 			</div>
 		</a>
 	</body>

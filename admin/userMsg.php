@@ -16,7 +16,7 @@
 		?>
 		<div style="padding:20px;">
 			<h2>Mensagens dos clientes</h2>
-			<div style="overflow: scroll;width:150%;height:90%;border-style:solid;border-width:1px 1px 1px 1px;max-width:100%;max-height:60%,min-height:60%">
+			<div style="overflow: scroll;width:150%;height:90%;border-style:solid;border-width:1px 1px 1px 1px;max-width:100%;max-height:60%;min-width:100%;">
 				<?php
 				while($show = $find->fetch(PDO::FETCH_ASSOC))
 				{ 
@@ -33,12 +33,12 @@
 							<a href="mailto:<?php echo $show["cliEmail"] ?>"> 
 								<button style="30px">Responder</button>
 							</a>&nbsp
-							<a><button style="30px">Marcar como lida</button></a>
+							<a><button id="btnRead" style="30px">Marcar como lida</button></a>
 						</div>
 					<?php echo '</div>';
 				}?>
-				</div>
 			</div>
+		</div>
 			
 		</div>
 	</body>

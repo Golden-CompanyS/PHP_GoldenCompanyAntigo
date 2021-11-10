@@ -1,3 +1,11 @@
+<?php
+	include "../database/connector.php";
+	session_start();
+	$cpfAtivo = $_SESSION["CPF"];
+	
+	$find = $connect->query("select Nome from seeFuncs where (CPF = '$cpfAtivo')");
+	$show = $find->fetch(PDO::FETCH_ASSOC);
+?>
 <nav class="navbar navbar-expand-lg navbar-light" style="background:#f8f9fa;">
 	<a href="#" class="navbar-brand" style="margin-left:5%;">Área do Funcionário</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,7 +16,7 @@
 			<li class="nav-item active">
 				<div>
 				<p style="margin:0px; font-size:12px;">Logado como:</p>
-				<p style="margin: 0px;">Nome do Funcionário</p>
+				<p style="margin: 0px;"><?php echo $show["Nome"]; ?></p>
 				</div>
 			</li>
 			<li class="nav-item active" style="margin-left:25px;margin-top:12px;">

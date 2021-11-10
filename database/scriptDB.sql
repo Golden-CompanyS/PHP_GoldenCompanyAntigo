@@ -10,7 +10,8 @@ create table tbCliMsg(
 msgID int primary key auto_increment,
 cliNome varchar(50) not null,
 cliEmail varchar(50) not null,
-cliMsg varchar(250) not null
+cliMsg varchar(250) not null,
+msgLida bool default(false)
 );
 
 create table tbCidade(
@@ -113,3 +114,6 @@ from (((tbfunc as f
     inner join tbestado as es on en.estUF = es.estUF);
     
 select * from seeFuncs;
+select Nome from seeFuncs where (CPF = '824.734.740-79');
+
+insert into tbclimsg values (default, "Wellington Cidade", "welcity@etec.gov", "Muito bom esse site aí mano.", default);
