@@ -53,7 +53,7 @@
 										</a>
 									</td>
 									<td>
-										<a href="changeFunc.php?cpf=<?php echo $show["CPF"] ?>">
+										<a href="alterFunc.php?cpf=<?php echo $show["CPF"] ?>">
 											<button class="btn btn-warning" type="submit">Alterar</button>
 										</a>
 									</td>
