@@ -115,5 +115,6 @@ from (((tbfunc as f
     
 select * from seeFuncs;
 select Nome from seeFuncs where (CPF = '824.734.740-79');
+select * from seeFuncs where(CPF = '777.777.777-77')
 
 insert into tbclimsg values (default, "Wellington Cidade", "welcity@etec.gov", "Muito bom esse site aí mano.", default);

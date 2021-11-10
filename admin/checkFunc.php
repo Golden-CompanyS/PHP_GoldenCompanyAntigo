@@ -16,7 +16,7 @@
 		?>
 		<div style="padding:20px;">
 			<h2>Verificar os funcionários cadastrados</h2>
-			<div style="overflow: scroll;width:150%;height:780%;border-style:solid;border-width:1px 1px 1px 1px;max-width:115%;max-height:780%;">
+			<div style="overflow: scroll;width:150%;height:90%;border-style:solid;border-width:1px 1px 1px 1px;max-width:115%;max-height:780%;">
 				<table class="table" style="max-width:inherit">
 					<thead>
 						<tr>
@@ -24,22 +24,37 @@
 							<th scope="col">Nome</th>
 							<th scope="col">Cargo</th>
 							<th scope="col">Endereço</th>
+							<th></th>
 						</tr>
 					</thead>
 					<tbody>
 						<?php
 							while($show = $find->fetch(PDO::FETCH_ASSOC))
 							{ 
-								echo'<tr class="align-middle">';?>
-									<td scope="col" ><?php echo $show["CPF"]?></td>
-									<td><?php echo $show["Nome"]?></td>
-									<td><?php echo $show["Cargo"]?>
+								echo'<tr class="align-middle" style="font-size:15px">';?>
+									<td scope="col">
+										<?php echo $show["CPF"]?>
+									</td>
+									<td>
+										<a title="<?php echo $show["Nome"]; ?>">
+											<?php echo mb_strimwidth($show["Nome"],0, 21, "...")?>
+										</a>
+									</td>
+									<td>
+										<a title="<?php echo $show["Cargo"]; ?>">
+											<?php echo mb_strimwidth($show["Cargo"],0, 21, "...")?>
+										</a>
 									<td>
 										<a title="<?php echo $show["CEP"]?>">
 											<?php echo $show["Logradouro"].", ".$show["Número"]?><br>
 											<small>
 												<?php echo $show["Cidade"].", ".$show["Estado"]?>
 											</small>
+										</a>
+									</td>
+									<td>
+										<a href="changeFunc.php?cpf=<?php echo $show["CPF"] ?>">
+											<button class="btn btn-warning" type="submit">Alterar</button>
 										</a>
 									</td>
 								</tr>

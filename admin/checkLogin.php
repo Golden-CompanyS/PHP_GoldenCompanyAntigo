@@ -5,16 +5,16 @@ include "../database/connector.php";
 $cpf = $_POST["txtCPF"];
 $senha = $_POST["txtSenha"];
 
-$find = $connect->query("select funcCPF from tbfunc where (funcCPF = '$cpf')");
+$find = $connect->query("select funcCPF, funcSenha from tbfunc where (funcCPF = '$cpf')");
 if($find->rowCount() == 1)
 {
-	$find = $connect->query("select funcCPF, funcSenha from tbfunc where (funcSenha = '$senha')");
-	if($find->rowCount() == 1)
+	$show = $find->fetch(PDO::FETCH_ASSOC);
+	$senhaCript = $show["funcSenha"];
+	
+	if(password_verify($senha, $senhaCript))
 	{
-		$show = $find->fetch(PDO::FETCH_ASSOC);
 		$cpfAtivo = $show["funcCPF"];
-		$_SESSION["CPF"] = $cpfAtivo;
-		
+		$_SESSION["CPF"] = $cpfAtivo;		
 		header("location:checkFunc.php");
 	}
 	else

@@ -1,10 +1,18 @@
 <?php
 	include "../database/connector.php";
 	session_start();
-	$cpfAtivo = $_SESSION["CPF"];
 	
-	$find = $connect->query("select Nome from seeFuncs where (CPF = '$cpfAtivo')");
-	$show = $find->fetch(PDO::FETCH_ASSOC);
+	if(empty($_SESSION["CPF"]))
+	{
+			header("Location:../index.php");
+	}
+	else
+	{
+		$cpfAtivo = $_SESSION["CPF"];
+		
+		$find = $connect->query("select Nome from seeFuncs where (CPF = '$cpfAtivo')");
+		$show = $find->fetch(PDO::FETCH_ASSOC);
+	}
 ?>
 <nav class="navbar navbar-expand-lg navbar-light" style="background:#f8f9fa;">
 	<a href="#" class="navbar-brand" style="margin-left:5%;">Área do Funcionário</a>
@@ -20,7 +28,7 @@
 				</div>
 			</li>
 			<li class="nav-item active" style="margin-left:25px;margin-top:12px;">
-				<a href="../index.php" style="color:black;">Sair</a>
+				<a href="sessionDestroy.php" style="color:black;">Sair</a>
 			</li>
 		</ul>
 	</div>

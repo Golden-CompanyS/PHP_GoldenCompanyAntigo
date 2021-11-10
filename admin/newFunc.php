@@ -75,7 +75,7 @@
 					<label for="txtSenha">Senha:</label>
 					<input id="txtSenha" name="txtSenha" type="password" placeholder="Insira uma senha para o funcionário" class="form-control" required>
 				</div>
-				<button type="submit" class="btn btn-primary" style="width:30%; margin-top:10px">
+				<button type="submit" class="btn btn-primary" style="width:30%; margin-top:10px;background:black;">
 					Cadastrar
 				</button>
 			</form>

@@ -30,7 +30,7 @@
 					</div>
 					<div class="form-group">
 						<label for="txtSenha">Senha:</label>
-						<input name="txtSenha" id="txtSenha" type="text" class="form-control" placeholder="Digite sua senha" style="font-size:24px;">
+						<input name="txtSenha" id="txtSenha" type="password" class="form-control" placeholder="Digite sua senha" style="font-size:24px;">
 					</div><br>
 					<button class="btn" type="submit" style="background:black; color: white;font-size:28px;width:300px;">
 						Entrar
