@@ -88,17 +88,17 @@
 							<form name="frmFeedback" method="post" action="insertUserMsg.php">
 								<div class="form-group">
 									<label for="txtNome">Nome:</label>
-									<input id="txtNome" type="text" class="form-control" name="txtNome" placeholder="Digite seu nome" style="background:gray;border-radius:3px;">
+									<input id="txtNome" type="text" class="form-control" name="txtNome" style="background:#e6e6e6;border-radius:3px;">
 								</div>
 								<div class="form-group">	
 									<label for="txtEmail">Email:</label>
-									<input id="txtEmail" type="email" class="form-control" name="txtEmail" placeholder="Digite seu email" style="background:gray;border-radius:3px;">
+									<input id="txtEmail" type="email" class="form-control" name="txtEmail" style="background:#e6e6e6;border-radius:3px;">
 								</div>
 								<div class="form-group">
 									<label for="txtMsg">Mensagem:</label>
-									<textarea id="txtMsg" class="form-control" name="txtMsg" placeholder="Digite sua mensagem" rows="8" style="background:gray;border-radius:3px;resize:none;"></textarea>
+									<textarea id="txtMsg" class="form-control" name="txtMsg" rows="8" maxlength="1000" style="background:#e6e6e6;border-radius:3px;resize:none;"></textarea>
 								</div>
-								 <button type="submit" class="btn" style="background:gray;border-radius:3px;margin-top:5px;">Enviar</button>
+								 <button type="submit" class="btn" style="background:#e6e6e6;border-radius:3px;margin-top:5px;">Enviar</button>
 							</form>
 						</div>
 						<div style="width:50%; background: DeepSkyBlue; margin-left: 30px;">

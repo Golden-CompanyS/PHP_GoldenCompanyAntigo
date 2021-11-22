@@ -16,12 +16,22 @@
 		?>
 		<div style="padding:20px;">
 			<h2>Mensagens dos clientes</h2>
-			<div style="overflow: scroll;width:150%;height:90%;border-style:solid;border-width:1px 1px 1px 1px;max-width:100%;max-height:60%;min-width:100%;">
+			<div style="overflow: scroll;border-style:solid;border-width:1px;max-height:45%;">
 				<?php
 				while($show = $find->fetch(PDO::FETCH_ASSOC))
-				{ 
-					echo '<div style="padding:10px;display:flex;flex-direction:column;border-width:1px 1px 1px 1px;">';?>
-						<h4>Mensagem <?php echo $show["msgID"] ?></h4>
+				{
+					?>
+					<section id="msgNum<?php echo $show["msgID"] ?>">
+					<?php
+					if($show["msgLida"] == false)
+					{
+						$read = "background:#e6e6e6;";
+						$new = "(nova)";
+						$mark = "Marcar como lida";
+					}
+					else { $read = ""; $new = ""; $mark = "Marcar como nao lida";}
+					echo '<div style="padding:10px;display:flex;flex-direction:column;border-width:1px; '.$read.'">';?>
+						<h4>Mensagem <?php echo $show["msgID"]." <small>".$new."</small></h4>"?>
 						<div style="display:flex;align-items: flex-start;">
 							<h5>De:&nbsp<?php echo $show["cliNome"] ?></h5><p> </p>
 						</div>
@@ -33,9 +43,12 @@
 							<a href="mailto:<?php echo $show["cliEmail"] ?>"> 
 								<button style="30px">Responder</button>
 							</a>&nbsp
-							<a><button id="btnRead" style="30px">Marcar como lida</button></a>
+							<a href="readUnreadMsg.php?msgid=<?php echo $show["msgID"]?>">
+								<button id="btnRead" style="30px"><?php echo $mark ?></button>
+							</a>
 						</div>
 					<?php echo '</div>';
+					echo "</section>";
 				}?>
 			</div>
 		</div>
