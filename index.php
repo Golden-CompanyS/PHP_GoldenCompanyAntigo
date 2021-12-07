@@ -13,24 +13,29 @@
 		<?php
 			include "header.html";
 		?>
-			<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img style="width: 100%; height: 430.33px; object-fit: cover;" src="img/slideshow/1.jpg" alt="First slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="img/slideshow/2.jpg" alt="Second slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="img/slideshow/3.jpg" alt="Third slide">
-					</div>
-				</div>
-			</div>
+		<?php
+			include "slides.html";
+		?>
 		</section>
 		
-		<style>.up:hover{
+		<style>
+		.up:hover{
 			opacity:100%;
-		}</style>
+		}
+		.btn{
+			background:black;
+			color:white;
+			border-radius:3px;
+			font-weight:600;
+			margin-top:5px;
+		}
+		.btn:hover{
+			background-color:gold;
+			color:black;
+			font-weight:600;
+			transition:0.3s;
+		}
+		</style>
 			
 		<section  id="limitUp">
 			<div class="up" style="position: sticky;width: 80px;height: 80px;left: 1100px;top:500px;background:gray;z-index:1;border-radius:25px;opacity:10%;">
@@ -44,39 +49,77 @@
 				
 			
 				<div style="padding: 25px; display: flex;">
-					<div style="width:100%; height: 564px; background: gray;">
-						<div style="background: red; width: 100%; height: 198px;">
+					<div style="margin-left: 280px; width:350px; height: 260px; background: white;">
+						<div class="service1">
+							<img src="img/DevWeb.png" class="imgDevWeb" style="height: 208px;">
 						</div>
 						<div style="width: 100%; height: 198px;">
 						</div>
 						<div style="width: 100%; height: 198px;">
 						</div>
 					</div>
-					<div style="padding: 20px; display: flex; justify-content:center; flex-direction:column;">
-						<h1>Serviços</h1>
-						<p style="font-size: 28px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a ipsum sit amet nisi cursus 
-						faucibus. Duis vestibulum vitae leo et mattis. In non lacinia risus. Vestibulum molestie erat vitae
-						felis semper suscipit. Sed auctor dignissim dolor a imperdiet. Donec a nunc velit. Maecenas pretium 
-						erat ac porta convallis. In sed odio tortor. Morbi ornaremalesuada elit non ultrices. Etiam pulvinar, 
-						lectus a imperdiet venenatis, erat velit commodo nibh, at finibus tellus est at leo. 
-					</div>
+					<div style="margin-top: -65px; padding: 50px; display: flex; justify-content:center; flex-direction:column;">
+						<h1>Desenvolvimento Web</h1>
+						<p style="font-size: 28px">Na era onde tudo se tornou digital, não se 
+						pode ficar para trás. Uma empresa sem site, é uma empresa sem identidade. 
+						E com nossos sites, faremos sua empresa se destacar.</div>
 				</div>
+				<div class="line1" style="margin:25px; display:flex; height:2px; width:1200px; background:#C0C0C0;"></div>
+				<br><br>
+				<div style="padding: 25px; display: flex;">
+					<div style="margin-left: 280px; width:350px; height: 260px; background: white;">
+						<div class="service2">
+							<img src="img/Design2.png" class="imgDesign" style="height: 208px;">
+						</div>
+						<div style="width: 100%; height: 198px;">
+						</div>
+						<div style="width: 100%; height: 198px;">
+						</div>
+					</div>
+					<div style="margin-top: -65px; padding: 50px; display: flex; justify-content:center; flex-direction:column;">
+						<h1>Design Digital</h1>
+						<p style="font-size: 28px">Nossa equipe de design se preocupa em 
+						trazer o melhor visual e experiência para o usuário, afim de 
+						estabelecer a identidade visual do cliente no meio digital.</div>
+				</div>
+				<div class="line2" style="margin:25px; display:flex; height:2px; width:1200px; background:#C0C0C0;"></div>
+				<br><br>
+				<div style="padding: 25px; display: flex;">
+					<div style="margin-left: 280px; width:350px; height: 260px; background: white;">
+						<div class="service2">
+							<img src="img/BackEnd.png" class="imgBackEnd" style="height: 208px;">
+						</div>
+						<div style="width: 100%; height: 198px;">
+						</div>
+						<div style="width: 100%; height: 198px;">
+						</div>
+					</div>
+					<div style="margin-top: -65px; padding: 50px; display: flex; justify-content:center; flex-direction:column;">
+						<h1>Desenvolvimento Back-End</h1>
+						<p style="font-size: 28px">Assim como sites, também desenvolvemos
+						software de gerenciamento para sua empresa, aprimorando a administração,
+						facilitando, integrando e automatizando atividades e processos.</div>
+				</div>
+				<div class="line2" style="margin:25px; display:flex; height:2px; width:1200px; background:#C0C0C0;"></div>
+				<br><br>
 				<div style="display: flex; flex-direction: column; padding-bottom: 10%">
 					<h1 align="center" style="padding-bottom: 50px;">Parceiros</h2>
 					<div style="display: flex; justify-content: space-evenly;">
-						<img style="background: gray; height: 200px; width: 200px;">
-						<img style="background: gray; height: 200px; width: 200px;">
-						<img style="background: gray; height: 200px; width: 200px;">
+						<img src="img/BG.png" class="imgBG" style="height: 200px;">
+						<img src="img/Saga.png" class="imgSaga" style="height: 200px;">
+						<img src="img/Dell.png" class="imgDell" style="height: 200px;">
 					</div>
 				</div>
-				<div style="background: gray; padding-top: 5%; padding-bottom: 5%">
-					<h1 align="center">Objetivos da empresa</h1><br>
-					<div style="display: flex; justify-content: space-evenly; text-align: -webkit-center;">
-						<div><img style="background: gray; height: 200px; width: 200px;"><h3>Segurança Social</h3></div>
-						<div><img style="background: gray; height: 200px; width: 200px;"><h3>Melhor Expericência</h3></div>
-						<div><img style="background: gray; height: 200px; width: 200px;"><h3>Atender à Expectativas</h3></div>
+				<div class="line3" style="margin:25px; display:flex; height:2px; width:1200px; background:#C0C0C0;"></div>
+				<div style="display: flex; flex-direction: column; padding-bottom: 10%; padding-top: 5%; padding-left:5%;">
+					<h1 align="center" style="padding-right:50px">Objetivos da empresa</h1><br>
+					<div style="display: flex; justify-content: space-evenly; text-align:center;">
+						<div><img src="img/image 1.png" class="imgBG" style="height: 200px;"><h3>Segurança Social</h3></div>
+						<div><img src="img/image 2.png" class="imgSaga" style="height: 200px;"><h3>Melhor Expericência</h3></div>
+						<div><img src="img/image 3.png" class="imgDell" style="height: 200px;"><h3>Atender à Expectativas</h3></div>
 					</div>
 				</div>
+				<div class="line3" style="margin:25px; display:flex; height:2px; width:1200px; background:#C0C0C0;"></div>
 			</section>
 				<section id="Contact">
 				<div style="padding-top: 5%; padding-bottom: 5%">
@@ -88,17 +131,19 @@
 							<form name="frmFeedback" method="post" action="insertUserMsg.php">
 								<div class="form-group">
 									<label for="txtNome">Nome:</label>
-									<input id="txtNome" type="text" class="form-control" name="txtNome" style="background:#e6e6e6;border-radius:3px;">
+									<input id="txtNome" type="text" class="form-control" name="txtNome" placeholder="Digite seu nome" style="border-radius:3px;">
 								</div>
+								<br>
 								<div class="form-group">	
 									<label for="txtEmail">Email:</label>
-									<input id="txtEmail" type="email" class="form-control" name="txtEmail" style="background:#e6e6e6;border-radius:3px;">
+									<input id="txtEmail" type="email" class="form-control" name="txtEmail" placeholder="Digite seu email" style="border-radius:3px;">
 								</div>
+								<br>
 								<div class="form-group">
 									<label for="txtMsg">Mensagem:</label>
-									<textarea id="txtMsg" class="form-control" name="txtMsg" rows="8" maxlength="1000" style="background:#e6e6e6;border-radius:3px;resize:none;"></textarea>
+									<textarea id="txtMsg" class="form-control" name="txtMsg" placeholder="Digite sua mensagem" rows="8" style="border-radius:3px;resize:none;"></textarea>
 								</div>
-								 <button type="submit" class="btn" style="background:#e6e6e6;border-radius:3px;margin-top:5px;">Enviar</button>
+								 <button type="submit" class="btn">Enviar</button>
 							</form>
 						</div>
 						<div style="width:50%; background: DeepSkyBlue; margin-left: 30px;">

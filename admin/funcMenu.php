@@ -10,7 +10,7 @@
 	{
 		$cpfAtivo = $_SESSION["CPF"];
 		
-		$find = $connect->query("select * from seeFuncs where (CPF = '$cpfAtivo')");
+		$find = $connect->query("select Nome from seeFuncs where (CPF = '$cpfAtivo')");
 		$show = $find->fetch(PDO::FETCH_ASSOC);
 	}
 ?>
@@ -24,7 +24,7 @@
 			<li class="nav-item active">
 				<div>
 				<p style="margin:0px; font-size:12px;">Logado como:</p>
-				<p style="margin: 0px;"><?php echo mb_strimwidth($show["Nome"],0, 22, "..."); ?></p>
+				<p style="margin: 0px;"><?php echo $show["Nome"]; ?></p>
 				</div>
 			</li>
 			<li class="nav-item active" style="margin-left:25px;margin-top:12px;">
@@ -49,13 +49,9 @@
 				</a>
 			</div>
 			<div class="col">
-				<?php
-					$find = $connect->query("select * from tbclimsg where (msgLida = false);");
-					$notNum = $find->rowCount();
-				?>
 				<a href="userMsg.php" style="text-decoration:none;">
 					<img src="" height="145px" width="350px">
-					<h4 align="center" style="font-weight:normal;color:black;">Mensagens dos clientes (<?php echo $notNum?>)</h4>
+					<h4 align="center" style="font-weight:normal;color:black;">Mensagens dos clientes</h4>
 				</a>
 			</div>
 		</div>

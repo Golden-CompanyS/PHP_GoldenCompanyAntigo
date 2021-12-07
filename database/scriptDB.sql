@@ -10,8 +10,8 @@ create table tbCliMsg(
 msgID int primary key auto_increment,
 cliNome varchar(50) not null,
 cliEmail varchar(50) not null,
-cliMsg varchar(1000) not null,
-msgLida bool default(false)
+cliMsg varchar(250) not null,
+msgLida bool default 0
 );
 
 create table tbCidade(
@@ -35,7 +35,6 @@ foreign key (estUF) references tbEstado (estUF)
 create table tbFunc(
 funcCPF char(14) primary key,
 funcNome varchar(50) not null,
-funcSocial varchar(50),
 funcCarg varchar(50) not null,
 numEnd int not null,
 funcSenha char(60) not null,
@@ -76,7 +75,6 @@ delimiter $$
 create procedure insertFunc(
 	vfuncCPF char(14),
 	vfuncNome varchar(50),
-    vfuncSocial varchar(50),
     vfuncCarg varchar(30), 
     vnumEnd int,
     vCEP char(9),
@@ -98,18 +96,18 @@ if not exists (select funcCPF from tbfunc where funcCPF = vfuncCPF) then
             values (vCEP, vlograd, (select cidID from tbcidade where cidNome = vcidNome), vestUF);
     end if;
 
-    insert into tbfunc (funcCPF, funcNome, funcSocial, funcCarg, numEnd, funcSenha, CEP) values 
-    (vfuncCPF, vfuncNome, vfuncSocial, vfuncCarg, vnumEnd, vfuncSenha,
+    insert into tbfunc (funcCPF, funcNome, funcCarg, numEnd, funcSenha, CEP) values 
+    (vfuncCPF, vfuncNome, vfuncCarg, vnumEnd, vfuncSenha,
     (select CEP from tbendereco where CEP = vCEP));
 end if;
 end;
 $$
 
-call insertFunc("824.734.740-79", "Larissa Miranda Sonoda", null, "Programadora Android", 232, "05376-140", "São Paulo", "SP", "Rua do Morro","$2y$10$5e7K8zOuFuhz4Cg4Im1IM.2GLE8ohlWL3zcM2CmrTifp9TJ1gqIHC");
+call insertFunc("824.734.740-79", "Larissa Miranda Sonoda", "Programadora Android", 232, "05376-140", "São Paulo", "SP", "Rua do Morro","12345");
 
 create view seeFuncs as
-select f.funcCPF as "CPF", 	f.funcNome as "Nome", f.funcSocial as "Nome social", f.funcCarg as "Cargo", en.lograd as "Logradouro",
-f.numEnd as "Número", c.cidNome as "Cidade", es.estUF as "Estado", en.CEP as "CEP", f.funcSenha as "Senha" 
+select f.funcCPF as "CPF", 	f.funcNome as "Nome", f.funcCarg as "Cargo", en.lograd as "Logradouro", f.numEnd as "Número",
+c.cidNome as "Cidade", es.estUF as "Estado", en.CEP as "CEP", f.funcSenha as "Senha" 
 from (((tbfunc as f
 	inner join tbendereco as en on f.CEP = en.CEP)
     inner join tbcidade as c on en.cidID = c.cidID)
@@ -119,6 +117,4 @@ select * from seeFuncs;
 select Nome from seeFuncs where (CPF = '824.734.740-79');
 select * from seeFuncs where(CPF = '777.777.777-77')
 
-insert into tbclimsg values (default, "Wellington Cidade", "welcity@etec.gov", "Muito bom esse site aí.", true);
-
-update tbclimsg set msgLida = false where msgID = 1;
+insert into tbclimsg values (default, "Wellington Cidade", "welcity@etec.gov", "Muito bom esse site aí mano.", default);
