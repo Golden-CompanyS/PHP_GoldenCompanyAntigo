@@ -43,8 +43,8 @@
 				</svg>
 				</a>
 			</div>
-			<div style="padding: 25px; display: flex;">
-				<img src="img/DevWeb.png" class="imgDevWeb" style="height: 208px;">
+			<div style="padding: 25px; display: flex;align-items: center;">
+				<img src="img/services/1.png" style="height: 208px;">
 				<div style="padding: 50px;">
 					<h1>Desenvolvimento Web</h1>
 					<p style="font-size: 28px">
@@ -55,8 +55,8 @@
 				</div>
 			</div>
 			<hr>
-			<div style="padding: 25px; display: flex;">
-				<img src="img/Design2.png" class="imgDesign" style="height: 208px;">
+			<div style="padding: 25px; display: flex;align-items: center;">
+				<img src="img/services/2.png" style="height: 208px;">
 				<div style="padding: 50px;">
 					<h1>Design Digital</h1>
 					<p style="font-size: 28px">
@@ -67,9 +67,8 @@
 				</div>
 			</div>
 			<hr>
-			<div style="padding: 25px; display: flex;">
-				<img src="img/BackEnd.png" class="imgBackEnd" style="height: 208px;">
-				</div>
+			<div style="padding: 25px; display: flex;align-items: center;">
+				<img src="img/services/3.png" style="height: 208px;">
 				<div style="padding: 50px;">
 					<h1>Desenvolvimento Back-End</h1>
 					<p style="font-size: 28px">
@@ -80,22 +79,24 @@
 					</div>
 			</div>
 			<hr>
-			<div>
+			<div style="padding:5%;">
 				<h1 align="center" style="padding-bottom: 50px;">Parceiros</h2>
 				<div style="display: flex; justify-content: space-evenly;">
-					<img src="img/BG.png" class="imgBG" style="height: 200px;">
-					<img src="img/Saga.png" class="imgSaga" style="height: 200px;">
-					<img src="img/Dell.png" class="imgDell" style="height: 200px;">
+					<img src="img/partners/bg.png" style="height: 200px;">
+					<img src="img/partners/saga.png" style="height: 200px;">
+					<img src="img/partners/dell.png" style="height: 200px;">
 				</div>
+				<h2></h2>
+				<h4></h4>
 			</div>
 			<hr>
-			<div style="padding-bottom: 10%; padding-top: 5%;">
+			<div style="padding: 5%;">
 				<h1 align="center">Objetivos da empresa</h1>
 				<br>
-				<div style="display: flex; justify-content: space-evenly; text-align:center;">
-					<div><img src="img/image 1.png" class="imgBG" style="height: 200px;"><h3>Segurança Social</h3></div>
-					<div><img src="img/image 2.png" class="imgSaga" style="height: 200px;"><h3>Melhor Expericência</h3></div>
-					<div><img src="img/image 3.png" class="imgDell" style="height: 200px;"><h3>Atender à Expectativas</h3></div>
+				<div style="display: flex; justify-content: space-around; text-align:center;">
+					<div><img src="img/objectives/1.png" style="height: 200px;"><h3>Segurança Social</h3></div>
+					<div><img src="img/objectives/2.png" style="height: 200px;"><h3>Melhor Expericência</h3></div>
+					<div><img src="img/objectives/3.png" style="height: 200px;"><h3>Atender à Expectativas</h3></div>
 				</div>
 			</div>
 			<hr>
