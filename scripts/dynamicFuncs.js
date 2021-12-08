@@ -18,8 +18,10 @@ tav.addEventListener("mouseover",hoverTav);
 tav.addEventListener("mouseleave",leaveTav);
 eri.addEventListener("mouseover",hoverEri);
 eri.addEventListener("mouseleave",leaveEri);
-wes.addEventListener("mouseover",wes);
-gui.addEventListener("mouseover",gui);
+wes.addEventListener("mouseover",hoverWes);
+wes.addEventListener("mouseleave",leaveWes);
+gui.addEventListener("mouseover",hoverGui);
+gui.addEventListener("mouseleave",leaveGui);
 
 function res()
 {
@@ -86,7 +88,7 @@ function hoverWes()
 	wes.style.opacity="100%";
 	desc.innerHTML = "Wesley S. de Jesus - Programador Web e Designer";
 }
-function leaveEri()
+function leaveWes()
 {
 	wes.style.opacity="70%";
 	res();

@@ -14,9 +14,9 @@
 			include "../database/connector.php";
 			$find = $connect->query("select * from tbCliMsg order by msgID desc");
 		?>
-		<div style="padding:20px;">
+		<div style="padding:20px;padding-bottom:0px">
 			<h2>Mensagens dos clientes</h2>
-			<div style="overflow: scroll;border-style:solid;border-width:1px;max-height:45%;">
+			<div style="overflow: scroll;border-style:solid;border-width:1px;height:450px;width:800px">
 				<?php
 				while($show = $find->fetch(PDO::FETCH_ASSOC))
 				{
@@ -51,8 +51,6 @@
 					echo "</section>";
 				}?>
 			</div>
-		</div>
-			
 		</div>
 	</body>
 </html>
