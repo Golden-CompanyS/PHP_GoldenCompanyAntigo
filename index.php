@@ -78,18 +78,17 @@
 					</p>
 					</div>
 			</div>
-			<hr>
-			<div style="padding:5%;">
+			<div style="padding:5%;background-image: url('img/partners/bg.jpg');background-size:cover">
 				<h1 align="center" style="padding-bottom: 50px;">Parceiros</h2>
 				<div style="display: flex; justify-content: space-evenly;">
-					<img src="img/partners/bg.png" style="height: 200px;">
-					<img src="img/partners/saga.png" style="height: 200px;">
-					<img src="img/partners/dell.png" style="height: 200px;">
+					<img id="partner2" src="img/partners/saga.png" style="height: 200px;filter:grayscale(100%);">
+					<img id="partner1" src="img/partners/bg.png" style="height: 200px;filter:grayscale(100%);opacity:80%">
+					<img id="partner3" src="img/partners/dell.png" style="height: 200px;filter:grayscale(100%);">
 				</div>
-				<h2></h2>
-				<h4></h4>
+				<h2 id="titlePartner" align="center"></h2>
+				<h5 id="descPartner" align="center">Passe o mouse sobre os ícones dos parceiros para conhecê-los!</h5>
+				<script src="scripts/dynamicPartners.js"></script>
 			</div>
-			<hr>
 			<div style="padding: 5%;">
 				<h1 align="center">Objetivos da empresa</h1>
 				<br>
