@@ -14,27 +14,31 @@
 			include "slides history.html";
 		?>
 			
-			<section id="Funcs">
+			<section id="Funcs" style="background-image: url('img/funcs/bg.jpg');background-size:cover;padding-top:2.5%;">
 				<div style="display:flex;align-items: center;flex-direction: column;">
 					<div class="row">
-					  <div class="col"><img src="" height="250" width="250"></div>
-					  <div class="col"><img src="" height="250" width="250"></div>
-					  <div class="col"><img src="" height="250" width="250"></div>
+					  <div class="col"><img id="lety" src="img/funcs/lety.png" height="250" width="250" style="opacity:70%"></div>
+					  <div class="col"><img id="lari" src="img/funcs/lari.png" height="250" width="250" style="opacity:70%"></div>
+					  <div class="col"><img id="tav" src="img/funcs/tav.png" height="250" width="250" style="opacity:70%"></div>
 					  <div class="col">
-						<div style="width:250px;display:flex;flex-direction: column;align-items: flex-end;"><h1>Quem</h1><h1>Somos</h1></div>
+						<div style="width:250px;display:flex;flex-direction: column;align-items: flex-end;">
+							<h1>Quem</h1><h1>Somos</h1>
+						</div>
 					  </div>
 					</div><br>
 					<div class="row">
-					  <div class="col"><img src="" height="250" width="250"></div>
-					  <div class="col"><img src="" height="250" width="250"></div>
-					  <div class="col"><img src="" height="250" width="250"></div>
-					  <div class="col"><img src="" height="250" width="250"></div>
+					  <div class="col"><img id="gus" src="img/funcs/gus.png" height="250" width="250" style="opacity:70%"></div>
+					  <div class="col"><img id="eri" src="img/funcs/eri.png" height="250" width="250" style="opacity:70%"></div>
+					  <div class="col"><img id="wes" src="img/funcs/wes.png" height="250" width="250" style="opacity:70%"></div>
+					  <div class="col"><img id="gui" src="img/funcs/gui.png" height="250" width="250" style="opacity:70%"></div>
 					</div>
 				</div><br>
-				<h4 align="center">
+				<h4 align="center" style="color:black;text-shadow: 1px 1px 10px white;" id="descFunc">
 				Clique em uma das fotos de perfil
 				para visualizar a descrição 
-				de cada membro</h4><br>
+				de cada membro
+				</h4><br>
+				<script src="scripts/dynamicFuncs.js"></script>
 			</section>
 		<?php include "footer.html" ?>
 	</body>
