@@ -12,25 +12,28 @@
 		<section id="Home">
 		<?php
 			include "header.html";
+			//include "slides.html";
 		?>
-			<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img style="width: 100%; height: 430.33px; object-fit: cover;" src="img/slideshow/1.jpg" alt="First slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="img/slideshow/2.jpg" alt="Second slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="img/slideshow/3.jpg" alt="Third slide">
-					</div>
-				</div>
-			</div>
 		</section>
 		
-		<style>.up:hover{
-			opacity:100%;
-		}</style>
+		<style>
+			.up:hover{
+				opacity:100%;
+			}
+			.btn{
+				background:black;
+				color:white;
+				border-radius:3px;
+				font-weight:600;
+				margin-top:5px;
+			}
+			.btn:hover{
+				background-color:gold;
+				color:black;
+				font-weight:600;
+				transition:0.3s;
+			}
+		</style>
 			
 		<section  id="limitUp">
 			<div class="up" style="position: sticky;width: 80px;height: 80px;left: 1100px;top:500px;background:gray;z-index:1;border-radius:25px;opacity:35%;">
@@ -40,45 +43,64 @@
 				</svg>
 				</a>
 			</div>
-			<section id="Services">
-				
-			
-				<div style="padding: 25px; display: flex;">
-					<div style="width:100%; height: 564px; background: gray;">
-						<div style="background: red; width: 100%; height: 198px;">
-						</div>
-						<div style="width: 100%; height: 198px;">
-						</div>
-						<div style="width: 100%; height: 198px;">
-						</div>
-					</div>
-					<div style="padding: 20px; display: flex; justify-content:center; flex-direction:column;">
-						<h1>Serviços</h1>
-						<p style="font-size: 28px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a ipsum sit amet nisi cursus 
-						faucibus. Duis vestibulum vitae leo et mattis. In non lacinia risus. Vestibulum molestie erat vitae
-						felis semper suscipit. Sed auctor dignissim dolor a imperdiet. Donec a nunc velit. Maecenas pretium 
-						erat ac porta convallis. In sed odio tortor. Morbi ornaremalesuada elit non ultrices. Etiam pulvinar, 
-						lectus a imperdiet venenatis, erat velit commodo nibh, at finibus tellus est at leo. 
-					</div>
+			<div style="padding: 25px; display: flex;">
+				<img src="img/DevWeb.png" class="imgDevWeb" style="height: 208px;">
+				<div style="padding: 50px;">
+					<h1>Desenvolvimento Web</h1>
+					<p style="font-size: 28px">
+						Na era onde tudo se tornou digital, não se 
+						pode ficar para trás. Uma empresa sem site, é uma empresa sem identidade. 
+						E com nossos sites, faremos sua empresa se destacar.
+					</p>
 				</div>
-				<div style="display: flex; flex-direction: column; padding-bottom: 10%">
-					<h1 align="center" style="padding-bottom: 50px;">Parceiros</h2>
-					<div style="display: flex; justify-content: space-evenly;">
-						<img style="background: gray; height: 200px; width: 200px;">
-						<img style="background: gray; height: 200px; width: 200px;">
-						<img style="background: gray; height: 200px; width: 200px;">
-					</div>
+			</div>
+			<hr>
+			<div style="padding: 25px; display: flex;">
+				<img src="img/Design2.png" class="imgDesign" style="height: 208px;">
+				<div style="padding: 50px;">
+					<h1>Design Digital</h1>
+					<p style="font-size: 28px">
+						Nossa equipe de design se preocupa em 
+						trazer o melhor visual e experiência para o usuário, afim de 
+						estabelecer a identidade visual do cliente no meio digital.
+					</p>
 				</div>
-				<div style="background: gray; padding-top: 5%; padding-bottom: 5%">
-					<h1 align="center">Objetivos da empresa</h1><br>
-					<div style="display: flex; justify-content: space-evenly; text-align: -webkit-center;">
-						<div><img style="background: gray; height: 200px; width: 200px;"><h3>Segurança Social</h3></div>
-						<div><img style="background: gray; height: 200px; width: 200px;"><h3>Melhor Expericência</h3></div>
-						<div><img style="background: gray; height: 200px; width: 200px;"><h3>Atender à Expectativas</h3></div>
-					</div>
+			</div>
+			<hr>
+			<div style="padding: 25px; display: flex;">
+				<img src="img/BackEnd.png" class="imgBackEnd" style="height: 208px;">
 				</div>
+				<div style="padding: 50px;">
+					<h1>Desenvolvimento Back-End</h1>
+					<p style="font-size: 28px">
+						Assim como sites, também desenvolvemos
+						software de gerenciamento para sua empresa, aprimorando a administração,
+						facilitando, integrando e automatizando atividades e processos.
+					</p>
+					</div>
+			</div>
+			<hr>
+			<div>
+				<h1 align="center" style="padding-bottom: 50px;">Parceiros</h2>
+				<div style="display: flex; justify-content: space-evenly;">
+					<img src="img/BG.png" class="imgBG" style="height: 200px;">
+					<img src="img/Saga.png" class="imgSaga" style="height: 200px;">
+					<img src="img/Dell.png" class="imgDell" style="height: 200px;">
+				</div>
+			</div>
+			<hr>
+			<div style="padding-bottom: 10%; padding-top: 5%;">
+				<h1 align="center">Objetivos da empresa</h1>
+				<br>
+				<div style="display: flex; justify-content: space-evenly; text-align:center;">
+					<div><img src="img/image 1.png" class="imgBG" style="height: 200px;"><h3>Segurança Social</h3></div>
+					<div><img src="img/image 2.png" class="imgSaga" style="height: 200px;"><h3>Melhor Expericência</h3></div>
+					<div><img src="img/image 3.png" class="imgDell" style="height: 200px;"><h3>Atender à Expectativas</h3></div>
+				</div>
+			</div>
+			<hr>
 			</section>
-				<section id="Contact">
+			<section id="Contact">
 				<div style="padding-top: 5%; padding-bottom: 5%">
 					<h1 align="center">Contate-nos</h1>
 					<h5 align="center">Deseja trabalhar conosco ou iniciar uma parceria? Dar uma sugestão ou feedback?</h5>
