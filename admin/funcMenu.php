@@ -38,13 +38,13 @@
 		<div class="row" style="width:360px;margin:0px;padding-bottom:7px;">
 			<div class="col">
 				<a href="checkFunc.php" style="text-decoration:none;">
-					<img src="" height="145px" width="350px">
+					<img src="../img/funcMenu/check.png" height="145px" width="350px" style="object-fit:contain">
 					<h4 align="center" style="font-weight:normal;color:black;">Verificar funcionários</h4>
 				</a>
 			</div>
 			<div class="col">
 				<a href="newFunc.php" style="text-decoration:none;">
-					<img src="" height="145px" width="350px">
+					<img src="../img/funcMenu/new.png" height="145px" width="350px" style="object-fit:contain">
 					<h4 align="center" style="font-weight:normal;color:black;">Cadastrar novo funcionário</h4>
 				</a>
 			</div>
@@ -54,8 +54,13 @@
 					$notNum = $find->rowCount();
 				?>
 				<a href="userMsg.php" style="text-decoration:none;">
-					<img src="" height="145px" width="350px">
-					<h4 align="center" style="font-weight:normal;color:black;">Mensagens dos clientes (<?php echo $notNum?>)</h4>
+					<img src="../img/funcMenu/msg.png" height="145px" width="350px" style="object-fit:contain">
+					<div style="display:flex;flex-direction:row;justify-content: center;">
+						<h4 style="font-weight:normal;color:black;margin-right:2px">Mensagens dos clientes</h4>
+						<span style="color:white;background:red;border-radius:50%;padding:4px 10px;font-size:4;position:absolute;top:555px;left:320px">
+							<?php echo $notNum?>
+						</span>
+					</div>
 				</a>
 			</div>
 		</div>
