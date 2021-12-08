@@ -33,7 +33,7 @@
 		}</style>
 			
 		<section  id="limitUp">
-			<div class="up" style="position: sticky;width: 80px;height: 80px;left: 1100px;top:500px;background:gray;z-index:1;border-radius:25px;opacity:10%;">
+			<div class="up" style="position: sticky;width: 80px;height: 80px;left: 1100px;top:500px;background:gray;z-index:1;border-radius:25px;opacity:35%;">
 				<a href="#Home">
 				<svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="white" class="bi bi-arrow-up" viewBox="0 0 16 16" style="margin:20%;">
 					<path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
@@ -88,45 +88,17 @@
 							<form name="frmFeedback" method="post" action="insertUserMsg.php">
 								<div class="form-group">
 									<label for="txtNome">Nome:</label>
-<<<<<<< HEAD
-<<<<<<< HEAD
-									<input id="txtNome" type="text" class="form-control" name="txtNome" placeholder="Digite seu nome" style="border-radius:3px;">
-=======
-									<input id="txtNome" type="text" class="form-control" name="txtNome" placeholder="Digite seu nome" style="background:gray;border-radius:3px;">
->>>>>>> parent of 5041253 (Exclusão de funcionário e mensagem lida/não lida)
-=======
 									<input id="txtNome" type="text" class="form-control" name="txtNome" style="background:#e6e6e6;border-radius:3px;">
->>>>>>> parent of 4698389 (Front-End PHP - Parte IV)
 								</div>
 								<div class="form-group">	
 									<label for="txtEmail">Email:</label>
-<<<<<<< HEAD
-<<<<<<< HEAD
-									<input id="txtEmail" type="email" class="form-control" name="txtEmail" placeholder="Digite seu email" style="border-radius:3px;">
-=======
-									<input id="txtEmail" type="email" class="form-control" name="txtEmail" placeholder="Digite seu email" style="background:gray;border-radius:3px;">
->>>>>>> parent of 5041253 (Exclusão de funcionário e mensagem lida/não lida)
-=======
 									<input id="txtEmail" type="email" class="form-control" name="txtEmail" style="background:#e6e6e6;border-radius:3px;">
->>>>>>> parent of 4698389 (Front-End PHP - Parte IV)
 								</div>
-								<div class="form-group">
-									<label for="txtMsg">Mensagem:</label>
-<<<<<<< HEAD
-<<<<<<< HEAD
-									<textarea id="txtMsg" class="form-control" name="txtMsg" placeholder="Digite sua mensagem" rows="8" style="border-radius:3px;resize:none;"></textarea>
-								</div>
-								 <button type="submit" class="btn">Enviar</button>
-=======
-									<textarea id="txtMsg" class="form-control" name="txtMsg" placeholder="Digite sua mensagem" rows="8" style="background:gray;border-radius:3px;resize:none;"></textarea>
-								</div>
-								 <button type="submit" class="btn" style="background:gray;border-radius:3px;margin-top:5px;">Enviar</button>
->>>>>>> parent of 5041253 (Exclusão de funcionário e mensagem lida/não lida)
-=======
+								<div class="form-group">	
+									<label for="txtEmail">Mensagem:</label>
 									<textarea id="txtMsg" class="form-control" name="txtMsg" rows="8" maxlength="1000" style="background:#e6e6e6;border-radius:3px;resize:none;"></textarea>
 								</div>
-								 <button type="submit" class="btn" style="background:#e6e6e6;border-radius:3px;margin-top:5px;">Enviar</button>
->>>>>>> parent of 4698389 (Front-End PHP - Parte IV)
+								<button type="submit" class="btn" style="background:#e6e6e6;border-radius:3px;margin-top:5px;">Enviar</button>
 							</form>
 						</div>
 						<div style="width:50%; background: DeepSkyBlue; margin-left: 30px;">

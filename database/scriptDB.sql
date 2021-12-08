@@ -10,17 +10,10 @@ create table tbCliMsg(
 msgID int primary key auto_increment,
 cliNome varchar(50) not null,
 cliEmail varchar(50) not null,
-<<<<<<< HEAD
 cliMsg varchar(250) not null,
-<<<<<<< HEAD
-msgLida bool default 0
-=======
-msgLida bool default(false)
->>>>>>> parent of 5041253 (Exclusão de funcionário e mensagem lida/não lida)
-=======
+msgLida bool default(0),
 cliMsg varchar(1000) not null,
 msgLida bool default(false)
->>>>>>> parent of 4698389 (Front-End PHP - Parte IV)
 );
 
 create table tbCidade(
