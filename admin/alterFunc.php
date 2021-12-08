@@ -42,7 +42,7 @@
 				</div>
 				<div class="form-group">
 					<label for="txtNome">Nome social:</label>
-					<input id="txtNomeSoc" name="txtNomeSoc" type="text" value="<?php echo $show["Nome social"] ?>" placeholder="Insira o nome social do funcionário caso seja trans" class="form-control" required>
+					<input id="txtNomeSoc" name="txtNomeSoc" type="text" value="<?php echo $show["Nome social"] ?>" placeholder="Insira o nome social do funcionário caso seja trans" class="form-control">
 				</div>
 				<div class="form-group">
 					<label for="txtCargo">Cargo:</label>

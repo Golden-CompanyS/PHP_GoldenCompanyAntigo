@@ -69,3 +69,36 @@ function leaveTav()
 	tav.style.opacity="70%";
 	res();
 }
+
+function hoverEri()
+{
+	eri.style.opacity="100%";
+	desc.innerHTML = "Maria Eduarda Rodrigues B. R. Dos Santos - Programadora ASP.NET";
+}
+function leaveEri()
+{
+	eri.style.opacity="70%";
+	res();
+}
+
+function hoverWes()
+{
+	wes.style.opacity="100%";
+	desc.innerHTML = "Wesley S. de Jesus - Programador Web e Designer";
+}
+function leaveEri()
+{
+	wes.style.opacity="70%";
+	res();
+}
+
+function hoverGui()
+{
+	gui.style.opacity="100%";
+	desc.innerHTML = "Guilherme Lemes Porto - Analista de Sistemas e Infraestrutura";
+}
+function leaveGui()
+{
+	gui.style.opacity="70%";
+	res();
+}

@@ -40,7 +40,7 @@ function sagaPop()
 	
 	tip = "";
 	title.innerHTML = "Saga"
-	desc.innerHTML = "Saga desc."
+	desc.innerHTML = "Somos, com muito orgulho, parceiros da maior escola de games, modelagem 3D e animação do Brasil, reconhecida internacionalmente."
 }
 function sagaUnpop()
 {
@@ -55,7 +55,7 @@ function dellPop()
 	
 	tip.innerHTML = "";
 	title.innerHTML = "Dell"
-	desc.innerHTML = "Dell desc."
+	desc.innerHTML = "Também somos ligados a Dell, uma das maiores produtoras de laptops, desktops, notebooks e outros acessórios digitais. A Golden Company acompanhada pelo poder de fazer mais."
 }
 function dellUnpop()
 {

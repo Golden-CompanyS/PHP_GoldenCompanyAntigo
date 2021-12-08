@@ -43,6 +43,7 @@
 				</svg>
 				</a>
 			</div>
+			<section id="Services">
 			<div style="padding: 25px; display: flex;align-items: center;">
 				<img src="img/services/1.png" style="height: 208px;">
 				<div style="padding: 50px;">
@@ -120,7 +121,7 @@
 									<label for="txtEmail">Mensagem:</label>
 									<textarea id="txtMsg" class="form-control" name="txtMsg" rows="8" maxlength="1000" style="background:#e6e6e6;border-radius:3px;resize:none;"></textarea>
 								</div>
-								<button type="submit" class="btn" style="background:#e6e6e6;border-radius:3px;margin-top:5px;">Enviar</button>
+								<button type="submit" class="btn" style="background:#e6e6e6;border-radius:3px;margin-top:5px;color:black">Enviar</button>
 							</form>
 						</div>
 						<div style="width:50%; background: DeepSkyBlue; margin-left: 30px;">
