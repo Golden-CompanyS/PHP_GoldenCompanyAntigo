@@ -5,7 +5,7 @@ include "../database/connector.php";
 $cpf = $_POST["txtCPF"];
 $senha = $_POST["txtSenha"];
 
-$find = $connect->query("select funcCPF, funcSenha from tbFunc (where funcCPF = '$cpf')");
+$find = $connect->query("select funcCPF, funcSenha from tbfunc where (funcCPF = '$cpf')");
 if($find->rowCount() == 1)
 {
 	$show = $find->fetch(PDO::FETCH_ASSOC);
