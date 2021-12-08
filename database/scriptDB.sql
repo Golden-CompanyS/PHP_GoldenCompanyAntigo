@@ -11,7 +11,11 @@ msgID int primary key auto_increment,
 cliNome varchar(50) not null,
 cliEmail varchar(50) not null,
 cliMsg varchar(250) not null,
+<<<<<<< HEAD
 msgLida bool default 0
+=======
+msgLida bool default(false)
+>>>>>>> parent of 5041253 (Exclusão de funcionário e mensagem lida/não lida)
 );
 
 create table tbCidade(

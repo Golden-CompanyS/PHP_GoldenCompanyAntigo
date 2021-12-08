@@ -131,19 +131,33 @@
 							<form name="frmFeedback" method="post" action="insertUserMsg.php">
 								<div class="form-group">
 									<label for="txtNome">Nome:</label>
+<<<<<<< HEAD
 									<input id="txtNome" type="text" class="form-control" name="txtNome" placeholder="Digite seu nome" style="border-radius:3px;">
+=======
+									<input id="txtNome" type="text" class="form-control" name="txtNome" placeholder="Digite seu nome" style="background:gray;border-radius:3px;">
+>>>>>>> parent of 5041253 (Exclusão de funcionário e mensagem lida/não lida)
 								</div>
 								<br>
 								<div class="form-group">	
 									<label for="txtEmail">Email:</label>
+<<<<<<< HEAD
 									<input id="txtEmail" type="email" class="form-control" name="txtEmail" placeholder="Digite seu email" style="border-radius:3px;">
+=======
+									<input id="txtEmail" type="email" class="form-control" name="txtEmail" placeholder="Digite seu email" style="background:gray;border-radius:3px;">
+>>>>>>> parent of 5041253 (Exclusão de funcionário e mensagem lida/não lida)
 								</div>
 								<br>
 								<div class="form-group">
 									<label for="txtMsg">Mensagem:</label>
+<<<<<<< HEAD
 									<textarea id="txtMsg" class="form-control" name="txtMsg" placeholder="Digite sua mensagem" rows="8" style="border-radius:3px;resize:none;"></textarea>
 								</div>
 								 <button type="submit" class="btn">Enviar</button>
+=======
+									<textarea id="txtMsg" class="form-control" name="txtMsg" placeholder="Digite sua mensagem" rows="8" style="background:gray;border-radius:3px;resize:none;"></textarea>
+								</div>
+								 <button type="submit" class="btn" style="background:gray;border-radius:3px;margin-top:5px;">Enviar</button>
+>>>>>>> parent of 5041253 (Exclusão de funcionário e mensagem lida/não lida)
 							</form>
 						</div>
 						<div style="width:50%; background: DeepSkyBlue; margin-left: 30px;">
