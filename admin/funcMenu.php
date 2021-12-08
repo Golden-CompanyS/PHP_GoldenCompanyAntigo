@@ -57,9 +57,14 @@
 					<img src="../img/funcMenu/msg.png" height="145px" width="350px" style="object-fit:contain">
 					<div style="display:flex;flex-direction:row;justify-content: center;">
 						<h4 style="font-weight:normal;color:black;margin-right:2px">Mensagens dos clientes</h4>
-						<span style="color:white;background:red;border-radius:50%;padding:4px 10px;font-size:4;position:absolute;top:555px;left:320px">
-							<?php echo $notNum?>
-						</span>
+						<?php
+						if($notNum > 0)
+						{
+							echo '<span style="color:white;background:red;border-radius:50%;padding:4px 10px;font-size:4;position:absolute;top:555px;left:320px">';
+								echo $notNum;
+							echo '</span>';
+						}
+						?>
 					</div>
 				</a>
 			</div>
