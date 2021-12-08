@@ -1,14 +1,13 @@
-@@ -1,184 +0,0 @@
 <style>
 .slider{
-	width:1260px;
-	height:740px;
+	width:100%;
+	height:430px;
 	overflow:hidden;
 }
 
 .slides{
 	width:500%;
-	height:500px;
+	height:420px;
 	display:flex;
 }
 
@@ -22,7 +21,7 @@
 }
 
 .slide img{
-	width:1260px;
+	width:100%;
 	height:740px;
 }
 
@@ -68,14 +67,12 @@
 	
 }
 
-/*css for automatic navigation*/
-
 .navigation-auto{
 	position:absolute;
 	display:flex;
 	width:1260px;
 	justify-content:center;
-	margin-top:450px;
+	margin-top:370px;
 }
 
 .navigation-auto div{
@@ -104,21 +101,17 @@
 }
 
 </style>
-		<!--image slider start-->
-			<div class="slider" style="margin-top:10px;">
+			<div class="slider" style="margin-top:170px;">
 				<div class="slides">
-					<!--radio buttons start-->
 						<input type="radio" name="radio-btn" id="radio1">
 						<input type="radio" name="radio-btn" id="radio2">
 						<input type="radio" name="radio-btn" id="radio3">
-					<!--radio buttons end-->
-					<!--slide imagens start-->
 						<div class="slide first">
 							<div style="display: flex;flex-direction: row;justify-content: space-around;align-items: center; height:400px;">
 								<div class="logo" style="margin-left:155px; display:flex;">
-									<img src="logo1.png" alt="" style="object-fit:contain; width:300px; height:300px;">
+									<img src="img/logos/logo old.png" style="object-fit:contain; width:300px; height:300px;">
 								</div>
-								<div class="text" style="font-size:22px; font-family:arial;padding-left:60px; padding-right:150px;display:flex; justify-content:center;">
+								<div class="text" style="font-size:20px;padding-left:60px; padding-right:150px;display:flex; justify-content:center;">
 								Um grupo de 5 amigos que se encontraram enquanto estudavam sobre 
 								programação, descobriram compartilhar de um mesmo sonho: construir 
 								uma empresa de desenvolvimento de software e transformar o futuro 
@@ -133,9 +126,9 @@
 						<div class="slide">
 							<div style="display: flex;flex-direction: row;justify-content: space-around;align-items: center; height:400px;">
 								<div class="logo" style="margin-left:155px; display:flex;">
-									<img src="logo2.png" alt="" style="object-fit:contain; width:300px; height:300px;">
+									<img src="img/logos/logo spring.png" style="object-fit:contain; width:300px; height:300px;">
 								</div>
-								<div class="text" style="font-size:26px; font-family:arial;padding-left:60px; padding-right:150px;display:flex; justify-content:center;">
+								<div class="text" style="font-size:20px;padding-left:60px; padding-right:150px;display:flex; justify-content:center;">
 								Antes de iniciarem a sua divulgação, pensaram então em ter um exemplo do que 
 								iriam oferecer em sua empresa, construindo um software do zero: pensaram em um 
 								sistema de gerenciamento de uma Livraria, que desenvolveram em 6 meses. Quando 
@@ -147,32 +140,26 @@
 						<div class="slide">
 							<div style="display: flex;flex-direction: row;justify-content: space-around;align-items: center; height:400px;">
 								<div class="logo" style="margin-left:155px; display:flex;">
-									<img src="logo3.png" alt="" style="object-fit:contain; width:300px; height:300px;">
+									<img src="img/logos/logo new.png" style="object-fit:contain; width:300px; height:300px;">
 								</div>
-								<div class="text" style="font-size:28px; font-family:arial;padding-left:60px; padding-right:150px;display:flex; justify-content:center;">
+								<div class="text" style="font-size:20px;padding-left:60px; padding-right:150px;display:flex; justify-content:center;">
 								Atualmente, a empresa já abrange boa parte do Brasil, mantendo seu foco e 
 								objetivos, transformando o futuro do mundo com o software.
 								</div>
 							</div>
 						</div>
-					<!--slide images end-->
-					<!--automatic navigation start-->
 						<div class="navigation-auto">
 							<div class="auto-btn1"></div>
 							<div class="auto-btn2"></div>
 							<div class="auto-btn3"></div>
 						</div>
-					<!--automatic navigation end-->
 				</div>
-				<!--manual navigation start-->
 				<div class="navigation-manual">
 					<label for="radio1" class="manual-btn"></label>
 					<label for="radio2" class="manual-btn"></label>
 					<label for="radio3" class="manual-btn"></label>
 				</div>
-				<!--manual navigation end-->
 			</div>
-			<!--image slider end-->
 			<script type="text/javascript">
 				var counter = 1;
 				setInterval(function(){
