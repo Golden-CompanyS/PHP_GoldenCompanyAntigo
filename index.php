@@ -12,7 +12,7 @@
 		<section id="Home">
 		<?php
 			include "header.html";
-			//include "slides.html";
+			include "slides.html";
 		?>
 		</section>
 		
