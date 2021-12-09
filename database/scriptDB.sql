@@ -4,6 +4,7 @@ create database dbGoldenCompanySite;
 
 use dbGoldenCompanySite;
 
+grant all privileges on dbGoldenCompanySite.* to "root"@"localhost" with grant option;
 grant all privileges on dbGoldenCompanySite.* to "main"@"localhost" with grant option;
 
 create table tbCliMsg(
