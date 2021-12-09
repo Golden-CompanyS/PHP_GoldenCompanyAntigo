@@ -42,7 +42,7 @@
 				</div>
 				<div class="form-group">
 					<label for="txtNome">Nome social:</label>
-					<input id="txtNomeSoc" name="txtNomeSoc" type="text" value="<?php echo $show["Nome social"] ?>" placeholder="Insira o nome social do funcionário caso seja trans" class="form-control" required>
+					<input id="txtNomeSoc" name="txtNomeSoc" type="text" value="<?php echo $show["Nome social"] ?>" placeholder="Insira o nome social do funcionário caso seja trans" class="form-control">
 				</div>
 				<div class="form-group">
 					<label for="txtCargo">Cargo:</label>
@@ -94,7 +94,7 @@
 				
 				<div class="form-group">
 					<label for="txtSenha">Senha atual:</label>
-					<input id="txtSenha" name="txtSenha" type="TEXT" placeholder="Digite a senha atual do funcionário" class="form-control" required>
+					<input id="txtSenha" name="txtSenha" type="password" placeholder="Digite a senha atual do funcionário" class="form-control" required>
 				</div>
 				<div style="display:flex;">
 					<button type="submit" class="btn btn-warning" style="width:30%; margin-top:10px;margin-right:5px;">
