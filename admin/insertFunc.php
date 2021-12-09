@@ -3,7 +3,7 @@ include "../database/connector.php";
 
 $cpf = $_POST["txtCPF"];
 $nome = $_POST["txtNome"];
-$social = $_POST["txtSocial"];
+$social = $_POST["txtNomeSoc"];
 $cargo = $_POST["txtCargo"];
 $log = $_POST["txtLog"];
 $numLog = $_POST["txtNumLog"];

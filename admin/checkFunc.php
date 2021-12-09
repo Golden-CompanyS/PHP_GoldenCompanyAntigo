@@ -18,7 +18,7 @@
 		?>
 		<div style="padding:20px;">
 			<h2>Verificar os funcionários cadastrados</h2>
-			<div style="overflow: scroll;width:150%;height:90%;border-style:solid;border-width:1px 1px 1px 1px;max-width:115%;max-height:780%;">
+			<div style="overflow: scroll;width:800px;height:465px;border-style:solid;border-width:1px 1px 1px 1px;">
 				<table class="table" style="max-width:inherit">
 					<thead>
 						<tr>
