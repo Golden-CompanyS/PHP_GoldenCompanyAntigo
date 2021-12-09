@@ -10,7 +10,7 @@
 	{
 		$cpfAtivo = $_SESSION["CPF"];
 		
-		$find = $connect->query("select Nome from seeFuncs where (CPF = '$cpfAtivo')");
+		$find = $connect->query("select * from seeFuncs where (CPF = '$cpfAtivo')");
 		$show = $find->fetch(PDO::FETCH_ASSOC);
 	}
 ?>
@@ -24,7 +24,7 @@
 			<li class="nav-item active">
 				<div>
 				<p style="margin:0px; font-size:12px;">Logado como:</p>
-				<p style="margin: 0px;"><?php echo $show["Nome"]; ?></p>
+				<p style="margin: 0px;"><?php echo mb_strimwidth($show["Nome"],0, 22, "..."); ?></p>
 				</div>
 			</li>
 			<li class="nav-item active" style="margin-left:25px;margin-top:12px;">
@@ -38,20 +38,34 @@
 		<div class="row" style="width:360px;margin:0px;padding-bottom:7px;">
 			<div class="col">
 				<a href="checkFunc.php" style="text-decoration:none;">
-					<img src="" height="145px" width="350px">
+					<img src="../img/funcMenu/check.png" height="145px" width="350px" style="object-fit:contain">
 					<h4 align="center" style="font-weight:normal;color:black;">Verificar funcionários</h4>
 				</a>
 			</div>
 			<div class="col">
 				<a href="newFunc.php" style="text-decoration:none;">
-					<img src="" height="145px" width="350px">
+					<img src="../img/funcMenu/new.png" height="145px" width="350px" style="object-fit:contain">
 					<h4 align="center" style="font-weight:normal;color:black;">Cadastrar novo funcionário</h4>
 				</a>
 			</div>
 			<div class="col">
+				<?php
+					$find = $connect->query("select * from tbclimsg where (msgLida = false);");
+					$notNum = $find->rowCount();
+				?>
 				<a href="userMsg.php" style="text-decoration:none;">
-					<img src="" height="145px" width="350px">
-					<h4 align="center" style="font-weight:normal;color:black;">Mensagens dos clientes</h4>
+					<img src="../img/funcMenu/msg.png" height="145px" width="350px" style="object-fit:contain">
+					<div style="display:flex;flex-direction:row;justify-content: center;">
+						<h4 style="font-weight:normal;color:black;margin-right:2px">Mensagens dos clientes</h4>
+						<?php
+						if($notNum > 0)
+						{
+							echo '<span style="color:white;background:red;border-radius:50%;padding:4px 10px;font-size:4;position:absolute;top:555px;left:320px">';
+								echo $notNum;
+							echo '</span>';
+						}
+						?>
+					</div>
 				</a>
 			</div>
 		</div>
