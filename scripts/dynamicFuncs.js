@@ -25,7 +25,7 @@ gui.addEventListener("mouseleave",leaveGui);
 
 function res()
 {
-	desc.innerHTML = "Clique em uma das fotos de perfil para visualizar a descrição de cada membro"
+	desc.innerHTML = "Deslize em uma das fotos de perfil para visualizar a descrição de cada membro"
 }
 
 function hoverLety()

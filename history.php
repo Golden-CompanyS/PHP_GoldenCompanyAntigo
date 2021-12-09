@@ -11,18 +11,20 @@
 	<body>
 		<?php 
 			include "header.html";
+		?>
+		<?php
 			include "slides history.html";
 		?>
-			
-			<section id="Funcs" style="background-image: url('img/funcs/bg.jpg');background-size:cover;padding-top:2.5%;">
+			<br><br>
+			<section id="Funcs" style="background:#DADADA;background-size:cover;padding-top:2.5%;">
 				<div style="display:flex;align-items: center;flex-direction: column;">
 					<div class="row">
 					  <div class="col"><img id="lety" src="img/funcs/lety.png" height="250" width="250" style="opacity:70%"></div>
 					  <div class="col"><img id="lari" src="img/funcs/lari.png" height="250" width="250" style="opacity:70%"></div>
 					  <div class="col"><img id="tav" src="img/funcs/tav.png" height="250" width="250" style="opacity:70%"></div>
-					  <div class="col">
+					  <div class="col"><br>
 						<div style="width:250px;display:flex;flex-direction: column;align-items: flex-end;">
-							<h1>Quem</h1><h1>Somos</h1>
+							<h1 style="font-size:80px;font-weight:bold;">Quem</h1><h1 style="font-size:70px;font-weight:bold;">Somos</h1>
 						</div>
 					  </div>
 					</div><br>
@@ -34,7 +36,7 @@
 					</div>
 				</div><br>
 				<h4 align="center" style="color:black;text-shadow: 1px 1px 10px white;" id="descFunc">
-				Clique em uma das fotos de perfil
+				Deslize em uma das fotos de perfil
 				para visualizar a descrição 
 				de cada membro
 				</h4><br>
