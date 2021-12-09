@@ -21,8 +21,8 @@
 				opacity:100%;
 			}
 			.btn{
-				background:black;
-				color:white;
+				background:#e6e6e6;
+				color:black;
 				border-radius:3px;
 				font-weight:600;
 				margin-top:5px;
@@ -83,9 +83,10 @@
 				<h1 align="center" style="padding-bottom: 50px;">Parceiros</h2>
 				<div style="display: flex; justify-content: space-evenly;">
 					<img id="partner2" src="img/partners/saga.png" style="height: 200px;filter:grayscale(100%);">
-					<img id="partner1" src="img/partners/bg.png" style="height: 200px;filter:grayscale(100%);opacity:80%">
+					<img id="partner1" src="img/partners/bg.png" style="height: 200px;filter:grayscale(100%);">
 					<img id="partner3" src="img/partners/dell.png" style="height: 200px;filter:grayscale(100%);">
 				</div>
+				
 				<h2 id="titlePartner" align="center"></h2>
 				<h5 id="descPartner" align="center">Passe o mouse sobre os ícones dos parceiros para conhecê-los!</h5>
 				<script src="scripts/dynamicPartners.js"></script>
@@ -93,7 +94,7 @@
 			<div style="padding: 5%;">
 				<h1 align="center">Objetivos da empresa</h1>
 				<br>
-				<div style="display: flex; justify-content: space-around; text-align:center;">
+				<div style="margin-left:8%;display: flex; justify-content: space-around; text-align:center;">
 					<div><img src="img/objectives/1.png" style="height: 200px;"><h3>Segurança Social</h3></div>
 					<div><img src="img/objectives/2.png" style="height: 200px;"><h3>Melhor Expericência</h3></div>
 					<div><img src="img/objectives/3.png" style="height: 200px;"><h3>Atender à Expectativas</h3></div>
@@ -103,7 +104,7 @@
 			</section>
 			<section id="Contact">
 				<div style="padding-top: 5%; padding-bottom: 5%">
-					<h1 align="center">Contate-nos</h1>
+					<h1 align="center">Contate-nos</h1><br>
 					<h5 align="center">Deseja trabalhar conosco ou iniciar uma parceria? Dar uma sugestão ou feedback?</h5>
 					<br>
 					<div style="display: flex; padding-right: 20px; padding-left: 20px;">
@@ -120,8 +121,8 @@
 								<div class="form-group">	
 									<label for="txtEmail">Mensagem:</label>
 									<textarea id="txtMsg" class="form-control" name="txtMsg" rows="8" maxlength="1000" style="background:#e6e6e6;border-radius:3px;resize:none;"></textarea>
-								</div>
-								<button type="submit" class="btn" style="background:#e6e6e6;border-radius:3px;margin-top:5px;color:black">Enviar</button>
+								</div><br>
+								<button type="submit" class="btn" style="border-radius:3px;margin-top:5px;">Enviar</button>
 							</form>
 						</div>
 						<div style="width:50%; background: DeepSkyBlue; margin-left: 30px;">
