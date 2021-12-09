@@ -23,7 +23,6 @@ function bgPop()
 {
 	bg.style.filter = ""
 	
-	tip.innerHTML = ""
 	title.innerHTML = "Etec Professor Basilides de Godoy"
 	desc.innerHTML = "Fornecendo cursos técnicos completamente gratuitos e de muita qualidade, a Etec Professor Basilides de Godoy formou os profissionais responsáveis pela Golden Company. Hoje, temos o prazer de possuirmos uma parceria com a instuição. ";
 }
@@ -38,7 +37,6 @@ function sagaPop()
 {
 	saga.style.filter = ""
 	
-	tip = "";
 	title.innerHTML = "Saga"
 	desc.innerHTML = "Somos, com muito orgulho, parceiros da maior escola de games, modelagem 3D e animação do Brasil, reconhecida internacionalmente."
 }
@@ -53,7 +51,6 @@ function dellPop()
 {
 	dell.style.filter = ""
 	
-	tip.innerHTML = "";
 	title.innerHTML = "Dell"
 	desc.innerHTML = "Também somos ligados a Dell, uma das maiores produtoras de laptops, desktops, notebooks e outros acessórios digitais. A Golden Company acompanhada pelo poder de fazer mais."
 }
